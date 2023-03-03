@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="home.css">
+    <title>Sign Up Page</title>
+</head>
+<body>
+   
+    <div class="nav">
+        <div class="user_img"></div>
+        <h2 id="nav_username" ></h2>
+    </div>
+    <div class="logout_nav">
+        <!-- when pressing log out button it will naviate to the index.html page  -->
+        <button id="logout_btn" onclick="log_out()">Log Out</button>
+    </div>
+    <div class="container">
+        <div class="form_container">
+            <form >
+                
+                <div class="user_details">
+                    <table>
+                        <tr>
+                            <td><div class="big_img"></div></td>
+                            <td><label for="username" id="username">Username</label>
+                                <br><br>   
+                           
+                           <label for="password" id="email">email</label></td> 
+                            
+                            </tr>
+                    </table>
+                    <div id="User_input">
+                        <input type="text" id="new_username" placeholder="Enter Username" required>
+                        <br>
+                        <input type="text" id="new_password" placeholder="Enter Password" required>
+                        <button onclick="create_user()">Create</button>
+                    </div>
+                    
+                </div>          
+                <br>
+                            <button id="create_user_btn" onclick="create()">Create New User</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- javascript code -->
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const username_value = urlParams.get("username_value");
+        document.getElementById("nav_username").innerHTML =  username_value;
+        document.getElementById("username").innerHTML =  username_value;
+        document.getElementById("email").innerHTML =  username_value+"@gmail.com";
+    </script>
+    <script src="user.js"></script>
+</body>
+</html>

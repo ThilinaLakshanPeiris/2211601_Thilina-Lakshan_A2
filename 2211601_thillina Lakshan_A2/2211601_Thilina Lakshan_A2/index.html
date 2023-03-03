@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="user.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign Up Page</title>
+</head>
+<body>
+    <!-- this div is show before pressin the sign in button -->
+    <div id="before_signin">
+        <div class="nav">
+            <!-- naviation ribbon -->
+            <button id="nav_btn" onclick="signin_btn()">Sign in</button>
+        </div>
+        <div class="container">
+            <div class="form_container">
+                <form >
+                    <h2 id="headding">Login</h2>
+                    <br>
+                                <label for="username">Username</label>
+                                <input type="text" id="username" placeholder="Enter username" required>
+                                <p id="username_err_msg">Please Enter Username</p>
+                    <br>
+                                <label for="password">Password</label>
+                                <input type="Password" id="password" placeholder="Enter password" required>
+                                <p id="password_err_msg">Please Enter Password</p>
+    
+                    <br>
+                                <button id="login_btn" type="button" onclick="login(document.getElementById('username').value , document.getElementById('password').value)">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+        <!-- this div is show after pressin the sign in button
+
+    <div id="signin_btn">
+        <div class="nav">
+            <!-- plane naviation ribbon -->
+        <!-- </div>
+        <div class="container">
+            <div class="form_container">
+                <form >
+                    <h2 >Sign in</h2>
+                    <br>
+                                <label for="username">Username</label>
+                                <input type="text" id="username" placeholder="Enter username" required>
+                                <p id="username_err_msg">Please Enter Username</p>
+                    <br>
+                                <label for="password">Password</label>
+                                <input type="Password" id="password" placeholder="Enter password" required>
+                                <p id="password_err_msg">Please Enter Password</p>
+    
+                    <br>
+                                <button type="button" onclick="login(document.getElementById('username').value , document.getElementById('password').value)">Sign in</button>
+                </form>
+            </div>
+        </div>
+    </div> -->
+    
+</body>
+</html>

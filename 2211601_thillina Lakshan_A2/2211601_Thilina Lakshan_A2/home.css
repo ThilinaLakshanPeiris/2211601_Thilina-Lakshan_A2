@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image:radial-gradient( #1d8046
+    , #103b97)
+}
+.container{
+    font-family: sans-serif;
+    justify-content: center;
+    /* background-color: aqua; */
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    border-spacing: none;
+    
+}
+.form_container{
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+    background-color: #ebebeb;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 40px 20px 40px ;
+}
+nav_username{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+label{
+
+    font-size: 30px;
+    margin: 10px;
+    padding: 5px;
+    height: 10px;
+    /* background-color: aquamarine; */
+    font-weight: bold;
+}
+.user_details{  
+    justify-content: center;
+    text-align: left;
+    /* background-color: #60c498; */
+    padding: 10px 10px;
+   
+}
+#username,#email{
+    /* background-color: #1a8cff; */
+    margin: 10px;
+    padding: 4px;
+}
+#email{
+    font-size: 20px;
+}
+#new_username,#new_email{
+    /* background-color: #1a8cff; */
+    margin: 5px;
+    padding-left: 10px;
+}
+/* #password{
+    margin: 30px;
+    padding: 50px;
+} */
+.big_img{
+    width: 100px;
+    height: 100px;
+    background-color: #c4b4b4;
+    border-radius: 50%;
+    margin: 4px 10px 0px 0px;
+    padding: 10px;
+}
+table{
+    justify-content: center;
+    width: 370px;
+    /* background-color: #3b99f8; */
+}
+input{
+    margin: 20px;
+    width: 200px;
+    height: 30px;
+    border-radius: 7px;
+    padding-left: 10px;
+}
+button{
+    width: 300px;
+    margin: 0px 50px 0 50px;
+    padding: 6px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #0080ff;
+}
+p{
+    font-size: 13px;
+    color: red;
+    padding-left: 30px;
+    display: none;
+}
+.nav{
+    display: flex;
+    height: 50px;
+    background-color: #2b85df;
+    justify-content: right;
+}
+.nav h2{
+    padding: 15px 15px 0 0;
+}
+.user_img{
+    width: 43px;
+    height: 43px;
+    background-color: #bebebe;
+    border-radius: 50%;
+    margin: 4px 10px 0px 0px;
+}
+.logout_nav{
+    display: flex;
+    height: 50px;
+    justify-content: left;
+}
+/* #nav_btn{
+    background-color: #4dffb8;
+    width: 100px;
+    height: 40px;
+    margin: 5px 20px;  
+} */
+#logout_btn{
+    background-color: #a0d8f1;
+    width: 100px;
+    height: 40px;
+    margin: 5px 20px;  
+}
+#User_input{
+    display: none;
+    padding-top:10px ;
+    /* background-color: #3b99f8; */
+    justify-content: center;
+    text-align: center;
+}
